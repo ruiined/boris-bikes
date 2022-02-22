@@ -1,11 +1,8 @@
 require 'bike'
+
 describe Bike do
-  it 'working?' do
+  it 'Working?' do
+    bike = Bike.new
+    expect @bike.respond_to? == true
   end
 end
-describe Bike(bike) do
-  it 'bike.respond_to' do
-  bike.working? == true
-  end   
-end
-  
