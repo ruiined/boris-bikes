@@ -1,8 +1,8 @@
 require 'bike'
 
 describe Bike do
-  it 'Working?' do
+  it "Is bike working?" do
     bike = Bike.new
-    expect @bike.respond_to? == true
+    expect(subject.respond_to?(:working?)).to eq true
   end
 end

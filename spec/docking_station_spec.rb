@@ -1,6 +1,8 @@
 require 'docking_station'
+
 describe DockingStation do
-  it 'release_bike' do 
-    expect(release_bike).to eq 'true'
+  it "Release bike" do
+    bike = Bike.new
+    expect(subject.respond_to?(:release_bike)).to eq true
   end
 end
