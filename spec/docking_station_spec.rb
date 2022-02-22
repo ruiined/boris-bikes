@@ -1,6 +1,6 @@
 require 'docking_station'
-describe 'docking_station' do
-  it 'runs' do 
-    expect(DockingStation(3)).to eq '3'
+describe DockingStation do
+  it 'release_bike' do 
+    expect(release_bike).to eq 'true'
   end
 end
