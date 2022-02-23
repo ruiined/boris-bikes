@@ -1,8 +1,10 @@
 require 'docking_station'
 
 describe DockingStation do
-  it "Release bike" do
-    bike = Bike.new
-    expect(subject.respond_to?(:release_bike)).to eq true
+  it "responds to release_bike" do
+    expect(subject).to respond_to :release_bike
+  end
+  it "returns new instans of Bike class" do
+    expect(subject).to be_instance_of Bike
   end
 end

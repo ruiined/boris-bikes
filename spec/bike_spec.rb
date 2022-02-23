@@ -1,8 +1,7 @@
-require 'bike'
+require 'docking_station'
 
 describe Bike do
-  it "Is bike working?" do
-    bike = Bike.new
-    expect(subject.respond_to?(:working?)).to eq true
+  it "responds to working?" do
+    expect(subject).to respond_to :working?
   end
 end
